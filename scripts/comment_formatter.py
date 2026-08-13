@@ -10,7 +10,7 @@ def format_pr_comment(
 
      for analysis in analyses:
         comment += f"### ❌ {analysis['job_name']}\n\n"
-        comment += f"Diagnosis\n{analysis["diagnosis"]}"
+        comment += f"Diagnosis\n{analysis['diagnosis']}"
         comment += "\n\n - - - - - - - - - - - - - - -\n\n"
 
      comment += "*Analysis powered by Groq AI. Always verify before applying fixes*"

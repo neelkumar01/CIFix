@@ -25,6 +25,7 @@ def get_logs(
                     "Authorization": f"token {os.getenv('GITHUB_TOKEN')}"
                }
                response = requests.get(url, headers=headers)
+               response.raise_for_status()
 
                failed_jobs.append({
                     "job_name": job.name,
