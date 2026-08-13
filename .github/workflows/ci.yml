@@ -11,6 +11,3 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
-
-      - name: Intentional Test Failure
-        run: exit 1
