@@ -22,14 +22,24 @@ def get_logs(
 
                # retrieve logs
                headers = {
-                    "Authorization": f"token {os.getenv('GITHUB_TOKEN')}"
+                    "Authorization": f"Bearer {os.getenv('GITHUB_TOKEN')}",
+                    "Accept": "application/vnd.github+json",
                }
-               response = requests.get(url, headers=headers)
+               response = requests.get(
+                    url, 
+                    headers=headers,
+                    allow_redirects=False
+               )
                response.raise_for_status()
+
+               log_url = response.headers["Location"]
+
+               log_response = requests.get(log_url)
+               log_response.raise_for_status()
 
                failed_jobs.append({
                     "job_name": job.name,
-                    "logs": response.text,
+                    "logs": log_response.text,
                     "failed_steps": [
                          step.name for step in job.steps
                          if step.conclusion == "failure"
