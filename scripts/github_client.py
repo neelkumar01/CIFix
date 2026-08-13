@@ -22,9 +22,9 @@ def get_logs(
 
                # retrieve logs
                headers = {
-                    "Authorization": f"token {os.getenv("GITHUB_TOKEN")}"
+                    "Authorization": f"token {os.getenv('GITHUB_TOKEN')}"
                }
-               response = requests.get(url, headers)
+               response = requests.get(url, headers=headers)
 
                failed_jobs.append({
                     "job_name": job.name,
