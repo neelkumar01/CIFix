@@ -31,7 +31,7 @@ Whenever a monitored GitHub Actions workflow fails, the project automatically:
 6. Asks the model to identify the root cause
 7. Posts the analysis directly as a comment on the related Pull Request
 
-### Architectur
+### Architecture
 
 ```mermaid
 flowchart TD
