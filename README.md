@@ -1,4 +1,4 @@
-### CI/CD Pipeline Failure Analysis with AI 📜 🧠
+### CI/CD Pipeline Failure Analysis with AI ⚙️ 🧠
 
 CI/CD pipelines are great when they work
 
