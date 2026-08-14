@@ -1,4 +1,4 @@
-### CI/CD Pipeline Failure Analysis with AI ⚙️ 🧠
+### CIFix  🛠️  🧠
 
 CI/CD pipelines are great when they work
 
@@ -15,23 +15,12 @@ For small failures this is fine. For large pipelines, it can take a lot of time
 
 So I built this project to make that process a little easier
 
-### Want to see the results first?
-
-👉 Click here and see the AI analysis of pipeline failure **LIVE** : https://github.com/neelkumar01/ci-cd-pipeline-failure-analysis-with-AI/pull/1#issuecomment-5278046628
+> [!IMPORTANT]
+> Want to see the results first?
+> 
+> 👉 Click here and see the AI analysis of pipeline failure **LIVE** : https://github.com/neelkumar01/ci-cd-pipeline-failure-analysis-with-AI/pull/1#issuecomment-5278046628
 
 ### How it works?
-
-Whenever a monitored GitHub Actions workflow fails, the project automatically:
-
-1. Detects the failed workflow
-2. Finds the failed jobs and steps
-3. Downloads the actual job logs
-4. Extracts the most useful error-related sections
-5. Sends those logs to an LLM using LangChain + Groq
-6. Asks the model to identify the root cause
-7. Posts the analysis directly as a comment on the related Pull Request
-
-### Architecture
 
 ```mermaid
 flowchart TD
