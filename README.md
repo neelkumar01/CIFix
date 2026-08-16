@@ -20,6 +20,8 @@ So I built this project to make that process a little easier
 > 
 > 👉 Click here and see the AI analysis of pipeline failure **LIVE** : https://github.com/neelkumar01/ci-cd-pipeline-failure-analysis-with-AI/pull/1#issuecomment-5278046628
 
+<hr>
+
 ### How it works?
 
 ```mermaid
@@ -48,6 +50,8 @@ flowchart TD
     K --> L[Post comment on Pull Request]
 ```
 
+<hr>
+
 ### Secrets
 
 The Groq API key is stored using GitHub Actions Secrets, not inside the repository
@@ -65,6 +69,8 @@ during the workflow run
 > [!NOTE]
 > The analyzer workflow has permissions to read Actions data and post comments on Pull Requests
 
+<hr>
+
 ### Problems I faced while building it
 
 - The workflow worked but the AI analysis was completely wrong
@@ -80,6 +86,8 @@ The GitHub job logs endpoint returns a temporary download URL. My first implemen
 - The AI needed stronger instructions
 
 The initial prompt was very simple: `Analyze the CI failure and find the root cause`. That leaves too much room for interpretation. The prompt was improved which made the diagnosis much more reliable
+
+<hr>
 
 ### Final Test Result 😃
 
