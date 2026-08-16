@@ -13,7 +13,9 @@ But when they fail, the usual experience is:
 
 For small failures this is fine. For large pipelines, it can take a lot of time
 
-So I built this project to make that process a little easier
+So I built this project to make that process a little easier 👍
+
+👉 CIFix analyzes GitHub Actions failures from CI logs and posts AI assisted root cause analysis and fix suggestions directly to pull request comments
 
 > [!IMPORTANT]
 > Want to see the results first?
